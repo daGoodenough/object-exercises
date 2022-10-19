@@ -25,6 +25,17 @@ Starter Code :
 */
 
 function transformEmployeeData(array) {
-  // your code here
+  let employeesArray = [];
 
+  array.forEach((employee) => {
+    let employeeObj = {};
+    employee.forEach((keyValue) => {
+        let key = keyValue[0];
+        let value = keyValue[1];
+        employeeObj[key] = value;
+    })
+    employeesArray.push(employeeObj);
+  })
+
+  return employeesArray;
 }

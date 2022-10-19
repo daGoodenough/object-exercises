@@ -22,5 +22,12 @@ Starter Code:
 */
 
 function convertObjectToList(obj) {
-  // your code here
+  let employeeArray = [];
+
+  for(let key in obj) {
+    let keyValue = [];
+    keyValue.push(key, obj[key]);
+    employeeArray.push(keyValue);
+  }
+  return employeeArray;
 }

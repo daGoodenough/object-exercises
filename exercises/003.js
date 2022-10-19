@@ -20,6 +20,14 @@ Starter Code:
 */
 
 function fromListToObject(array) {
-  // your code here
+  let obj = {};
+
+  array.forEach((innerArray) => {
+    let key = innerArray[0];
+    let value = innerArray[1];
+    obj[key] = value;
+  })
+
+  return obj;
 
 }
