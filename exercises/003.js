@@ -19,7 +19,7 @@ For instance, if the input had 6 values instead of 4, your code should flexibly 
 Starter Code:
 */
 
-function fromListToObject(array) {
+function fromLitToObject(array) {
   let obj = {};
 
   array.forEach((innerArray) => {
